@@ -1,4 +1,5 @@
 #8/21/21
+
 #Hi, here's your problem today.
 # This problem was recently asked by Amazon:
 
@@ -44,7 +45,7 @@ def parse_number(s):
 
     return True
 
-print("Determine if number 8-21")
+print("Determine if Number 8-21")
 print("<-----------------START--------------<DONE")
 print(parse_number("12.3"))
 # True
@@ -52,3 +53,6 @@ print(parse_number("12.3"))
 print(parse_number("12a"))
 # False
 print("<-----------------END--------------<")
+
+
+#8/22/20
