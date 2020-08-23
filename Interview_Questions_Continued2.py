@@ -56,3 +56,29 @@ print("<-----------------END--------------<")
 
 
 #8/22/20
+
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given a 2d n x m matrix where each cell
+# has a certain amount of change on the floor,
+# your goal is to start from the top left corner
+# mat[0][0] and end in the bottom right corner mat[n - 1][m - 1]
+# with the most amount of change. You can only move either left or down.
+
+
+def max_change(mat):
+    # Fill this in.
+    for i in range(len(mat)):
+        print(mat[i])
+
+mat = [
+    [0, 3, 0, 2],
+    [1, 2, 3, 3],
+    [6, 0, 3, 2]
+]
+print("Picking up Change 8-22")
+print("<-----------------START--------------<")
+print(max_change(mat))
+# 13
+print("<-----------------END--------------<")
