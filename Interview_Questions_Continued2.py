@@ -22,8 +22,30 @@ def parse_number(s):
     # Fill this in.
     print(s)
 
+    neg_count = 0
+    e_count = 0
+    dot_count = 0
+
+    for n in s:
+        if neg_count <= 1 and e_count <= 1 and dot_count <= 1:
+            if n == "-":
+                neg_count+=1
+            elif n == ".":
+                dot_count+=1
+            elif n == "e":
+                e_count+=1
+                dot_count = 1
+
+            elif not n.isnumeric():
+                return False
+
+        else:
+            return False
+
+    return True
+
 print("Determine if number 8-21")
-print("<-----------------START--------------<")
+print("<-----------------START--------------<DONE")
 print(parse_number("12.3"))
 # True
 
