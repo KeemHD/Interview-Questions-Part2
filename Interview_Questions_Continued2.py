@@ -96,6 +96,59 @@ print("<-----------------END--------------<")
 def square_numbers(nums):
     # Fill this in.
     print(nums)
+    flag = False
+    positive = []
+    negative = []
+    output = []
+
+
+    for n in nums:
+
+        if n >= 0:
+            positive.append(n*n)
+            flag = True
+
+        else:
+            negative.insert(0,n*n)
+
+        '''    
+        if flag:
+            if len(negative) == 0:
+                output.extend(positive)
+                positive.clear()
+
+            elif positive[0] == negative[0]:
+                output.append(negative[0])
+                negative.pop(0)
+
+            elif positive[0] < negative[0]:
+                output.append(positive[0])
+                positive.pop(0)
+                
+            else:
+                output.append(negative[0])
+                negative.pop(0)
+        '''
+
+    while len(negative) > 0:
+        if len(negative) == 0:
+            output.extend(positive)
+            positive.clear()
+
+        elif positive[0] == negative[0]:
+            output.append(negative[0])
+            negative.pop(0)
+
+        elif positive[0] < negative[0]:
+            output.append(positive[0])
+            positive.pop(0)
+
+        else:
+            output.append(negative[0])
+            negative.pop(0)
+    
+    return output
+
 
 print("Sorted Square Numbers 8-23")
 print("<-----------------START--------------<")
