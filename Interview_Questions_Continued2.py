@@ -244,3 +244,26 @@ print("<-----------------START--------------<")
 print(find_subtree(s, t))
 # True
 print("<-----------------END--------------<")
+
+#8/26/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+#Given a list of words in a string,
+# reverse the words in-place
+# (ie don't create a new string and reverse the words).
+# Since python strings are not mutable,
+# you can assume the input will be a mutable sequence (like list).
+
+def reverse_words(words):
+    # Fill this in.
+    print(words)
+
+print("Reverse Words 8-26")
+print("<-----------------START--------------<")
+s = list("can you read this")
+reverse_words(s)
+print(''.join(s))
+# this read you can
+print("<-----------------END--------------<")
+
