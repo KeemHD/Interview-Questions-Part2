@@ -267,3 +267,21 @@ print(''.join(s))
 # this read you can
 print("<-----------------END--------------<")
 
+#8/27/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Given 2 strings s and t, find and return all
+# indexes in string s where t is an anagram.
+
+
+def find_anagrams(s, t):
+    # Fill this in.
+    print()
+
+print("Anagrams in a String 8-27")
+print("<-----------------START--------------<")
+print(find_anagrams('acdbacdacb', 'abc'))
+# [3, 7]
+print("<-----------------END--------------<")
+
