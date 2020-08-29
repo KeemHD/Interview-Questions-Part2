@@ -285,3 +285,20 @@ print(find_anagrams('acdbacdacb', 'abc'))
 # [3, 7]
 print("<-----------------END--------------<")
 
+#8/28/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Given a 32-bit integer, swap the 1st and 2nd bit,
+# 3rd and 4th bit, up til the 31st and 32nd bit.
+
+def swap_bits(num):
+    # Fill this in.
+    print(num)
+    return 0
+
+print("Swap Bits 8-28")
+print("<-----------------START--------------<")
+print(f"0b{swap_bits(0b10101010101010101010101010101010):032b}")
+# 0b01010101010101010101010101010101
+print("<-----------------END--------------<")
