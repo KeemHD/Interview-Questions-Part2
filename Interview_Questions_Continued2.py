@@ -259,8 +259,9 @@ def reverse_words(words):
     # Fill this in.
     print(words)
 
+
 print("Reverse Words 8-26")
-print("<-----------------START--------------<")
+print("<-----------------START--------------<PPPPPPPPPPPPPPPPPPP")
 s = list("can you read this")
 reverse_words(s)
 print(''.join(s))
@@ -354,4 +355,25 @@ print("Rotate Matrix 8-30")
 print("<-----------------START--------------<")
 print(rotate(mat))
 # [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+print("<-----------------END--------------<")
+
+#8/31/20
+#Hi, here's your problem today.
+# This problem was recently asked by AirBNB:
+
+#The power function calculates x raised to the
+# nth power. If implemented in O(n) it would
+# simply be a for loop over n and multiply x n
+# times. Instead implement this power function
+# in O(log n) time. You can assume that n will
+# be a non-negative integer.
+
+def pow(x, n):
+    # Fill this in.
+    print()
+
+print("Power Function 8-31")
+print("<-----------------START--------------<")
+print(pow(5, 3))
+# 125
 print("<-----------------END--------------<")
