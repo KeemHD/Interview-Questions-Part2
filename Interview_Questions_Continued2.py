@@ -377,3 +377,24 @@ print("<-----------------START--------------<")
 print(pow(5, 3))
 # 125
 print("<-----------------END--------------<")
+
+#9/1/20
+#Hi, here's your problem today.
+# This problem was recently asked by Google:
+
+#Given a positive integer, find the square
+# root of the integer without using any
+# built in square root or power functions
+# (math.sqrt or the ** operator). Give accuracy
+# up to 3 decimal points.
+
+
+def sqrt(x):
+    # Fill this in.
+    print(x)
+
+print("Squareroot 9-1")
+print("<-----------------START--------------<")
+print(sqrt(5))
+# 2.236
+print("<-----------------END--------------<")
