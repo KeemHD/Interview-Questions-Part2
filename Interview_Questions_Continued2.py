@@ -514,3 +514,33 @@ print(schedule_tasks(['q', 'q', 's', 'q', 'w', 'w'], 4))
 # one of the possible orders to run the task would be
 # 'q', 'w', idle, idle, 'q', 'w'
 print("<-----------------END--------------<")
+
+#9/6/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given a sorted linked list of integers,
+# remove all the duplicate elements in the
+# linked list so that all elements in the linked list are unique.
+
+class Node:
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+
+    def __repr__(self):
+        return f"({self.value}, {self.next})"
+
+
+def remove_dup(lst):
+    # Fill this in.
+    print()
+
+lst = Node(1, Node(2, Node(2, Node(3, Node(3)))))
+
+print("Remove Duplicate from Linked List 9-6")
+print("<-----------------START--------------<")
+remove_dup(lst)
+print(lst)
+# (1, (2, (3, None)))
+print("<-----------------END--------------<")
