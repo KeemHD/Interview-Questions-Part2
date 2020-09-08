@@ -449,7 +449,7 @@ print("<-----------------END--------------<")
 # the space character ' '.
 
 def validate_sudoku(board):
-  # Fill this in.
+    # Fill this in.
     print(board)
 
 board = [
@@ -468,4 +468,22 @@ print("Sudoku Check 9-3")
 print("<-----------------START--------------<")
 print(validate_sudoku(board))
 # True
+print("<-----------------END--------------<")
+
+#9/4/20
+#Hi, here's your problem today.
+# This problem was recently asked by Facebook:
+
+#Given a number n, find the least number of
+# squares needed to sum up to the number.
+
+def square_sum(n):
+    # Fill this in.
+    print(n)
+
+print("Sum of Squares 9-4")
+print("<-----------------START--------------<")
+print(square_sum(13))
+# Min sum is 32 + 22
+# 2
 print("<-----------------END--------------<")
