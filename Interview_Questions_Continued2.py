@@ -480,11 +480,25 @@ print("<-----------------END--------------<")
 def square_sum(n):
     # Fill this in.
     print(n)
+    i = 1
+    solution_list = []
+    remainder = n
+
+    while remainder > 0:
+        while (i*i) <= remainder:
+            i+=1
+        i = i - 1
+        remainder = remainder % (i*i)
+        solution_list.append(i)
+        i =1
+
+    #print(solution_list)
+    return len(solution_list)
 
 print("Sum of Squares 9-4")
-print("<-----------------START--------------<")
+print("<-----------------START--------------<Done")
 print(square_sum(13))
-# Min sum is 32 + 22
+# Min sum is 3^2 + 2^2
 # 2
 print("<-----------------END--------------<")
 
