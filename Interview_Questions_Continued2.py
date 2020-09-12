@@ -661,9 +661,16 @@ print("<-----------------END--------------<")
 def base_2(n):
     # Fill this in.
     print(n)
+    binary_num = ""
+
+    while  n != 0:
+        binary_num += str(n%2)
+        n = int(n/2)
+
+    return binary_num[::-1]
 
 print("Convert to Base Two 9-10")
-print("<-----------------START--------------<")
+print("<-----------------START--------------<DONE")
 print(base_2(123))
 # 1111011
 print("<-----------------END--------------<")
