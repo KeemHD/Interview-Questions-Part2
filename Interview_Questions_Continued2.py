@@ -735,3 +735,20 @@ print(split_bst(root, 2))
 #               \
 #                5
 print("<-----------------END--------------<")
+
+#9/12/20
+#Hi, here's your problem today.
+# This problem was recently asked by LinkedIn:
+
+#Given a list of points as a tuple (x, y) and an
+# integer k, find the k closest points to the origin (0, 0).
+
+def closest_points(points, k):
+    # Fill this in.
+    print(points,k)
+
+print("Find Closest Points 9-12")
+print("<-----------------START--------------<")
+print(closest_points([(0, 0), (1, 2), (-3, 4), (3, 1)], 2))
+# [(1, 2), (0, 0)]
+print("<-----------------END--------------<")
