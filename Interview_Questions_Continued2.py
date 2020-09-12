@@ -261,7 +261,7 @@ def reverse_words(words):
 
 
 print("Reverse Words 8-26")
-print("<-----------------START--------------<PPPPPPPPPPPPPPPPPPP")
+print("<-----------------START--------------<")
 s = list("can you read this")
 reverse_words(s)
 print(''.join(s))
@@ -321,7 +321,7 @@ print("<-----------------END--------------<")
 def convert_to_int(s):
     # Fill this in.
     print(s)
-    return 0
+    return int(s)
 
 print("String to Integer 8-29")
 print("<-----------------START--------------<")
@@ -392,6 +392,7 @@ print("<-----------------END--------------<")
 def sqrt(x):
     # Fill this in.
     print(x)
+
 
 print("Squareroot 9-1")
 print("<-----------------START--------------<")
@@ -646,3 +647,24 @@ print("<-----------------START--------------<")
 print(num_connected_components([(1, 2), (2, 3), (4, 1), (5, 6)]))
 # 2
 print("<-----------------END--------------<")
+
+#9/10/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+#Given a non-negative integer n, convert n to
+# base 2 in string form. Do not use any built in
+# base 2 conversion functions like bin.
+
+#In the above example, 2^6 + 2^5 + 2^4 + 2^3 + 2^1 + 2^0 = 123.
+
+def base_2(n):
+    # Fill this in.
+    print(n)
+
+print("Convert to Base Two 9-10")
+print("<-----------------START--------------<")
+print(base_2(123))
+# 1111011
+print("<-----------------END--------------<")
+
