@@ -910,6 +910,48 @@ print("<-----------------END--------------<")
 def meeting_rooms(meetings):
     # Fill this in.
     print(meetings)
+    time_list = []
+    room_list = []
+
+    time_list.append(meetings[0])
+    meetings.pop(0)
+
+    while len(meetings) > 0:
+        inserted = False
+        for tup in time_list:
+            start_time = tup[0]
+            end_time = tup[1]
+
+            if meetings[0][0] < start_time:
+                time_list.insert(0,meetings[0])
+                meetings.pop(0)
+                inserted = True
+                break
+
+        if not inserted:
+            time_list.append(meetings[0])
+            meetings.pop(0)
+
+    start = time_list[0][0]
+    end = time_list[0][1]
+    #print(time_list)
+    time_list.pop(0)
+
+    for tup in time_list:
+        if end <= tup[0]:
+            end = tup[1]
+
+        else:
+            room_list.append((start,end))
+            start = tup[0]
+            end = tup[1]
+
+        if tup[1] == time_list[-1][1]:
+            room_list.append((start, end))
+
+    print("Merged -> "+ str(room_list))
+    return len(room_list)
+
 
 print("Number of Meeting Rooms 9-17")
 print("<-----------------START--------------<")
