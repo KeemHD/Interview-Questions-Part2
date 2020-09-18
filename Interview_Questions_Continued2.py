@@ -869,3 +869,25 @@ print("<-----------------START--------------<")
 print(larger_number([3, 2, 5, 6, 9, 8]))
 # print [2, 2, 3, 4, -1, -1]
 print("<-----------------END--------------<")
+
+#9/16/20
+#Hi, here's your problem today.
+# This problem was recently asked by Google:
+
+#Given a string, determine if you can
+# remove any character to create a palindrome.
+
+
+def create_palindrome(s):
+    # Fill this in.
+    print(s)
+
+print("Remove Character to Create Palindrome 9-16")
+print("<-----------------START--------------<")
+print(create_palindrome("abcdcbea"))
+# True
+print(create_palindrome("abccba"))
+# False
+print(create_palindrome("abccaa"))
+# False
+print("<-----------------END--------------<")
