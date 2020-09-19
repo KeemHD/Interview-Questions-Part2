@@ -1020,6 +1020,7 @@ def frac_to_dec(numerator, denominator):
         solution += ")"
 
     return(solution)
+
 print("Convert Fraction to Decimal 9-18")
 print("<-----------------START--------------<")
 print(frac_to_dec(-3, 2))
@@ -1030,4 +1031,20 @@ print(frac_to_dec(4, 3))
 
 print(frac_to_dec(1, 6))
 # 0.1(6)
+print("<-----------------END--------------<")
+
+#9/19/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given a positive integer n, find all primes less than n.
+
+def find_primes(n):
+    # Fill this in.
+    print(n)
+
+print("Primes 9-19")
+print("<-----------------START--------------<")
+print(find_primes(14))
+# [2, 3, 5, 7, 11, 13]
 print("<-----------------END--------------<")
