@@ -979,7 +979,47 @@ print("<-----------------END--------------<")
 def frac_to_dec(numerator, denominator):
     # Fill this in.
     print(str(numerator)+"/"+str(denominator))
+    num = str(numerator/denominator)
 
+
+    count = 1
+    dot = False
+    solution = ""
+
+    prev = num[0]
+
+    for i in range(1, len(num)):
+        if prev == ".":
+            dot = True
+            solution+= prev
+        elif dot:
+            if prev == num[i]:
+                count+=1
+            else:
+                solution+=prev
+                if count != 1:
+                    if count > int(prev):
+                        count = int(prev)
+                        solution = solution[:-1]
+                    solution+="("
+                    solution += str(count)
+                    solution += ")"
+                count = 1
+        else:
+            solution += prev
+        prev = num[i]
+
+    solution += prev
+    if count != 1:
+        if count > int(prev):
+            count = int(prev)
+            solution = solution[:-1]
+
+        solution += "("
+        solution += str(count)
+        solution += ")"
+
+    return(solution)
 print("Convert Fraction to Decimal 9-18")
 print("<-----------------START--------------<")
 print(frac_to_dec(-3, 2))
