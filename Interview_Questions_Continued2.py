@@ -1160,6 +1160,9 @@ def multiply(str1, str2):
     # Fill this in.
     print(str1,str2)
 
+    solution = float(str1)*float(str2)
+    return str(int(solution))
+
 print("Multiply 9-21")
 print("<-----------------START--------------<")
 print(multiply("11", "13"))
