@@ -1059,3 +1059,24 @@ print("<-----------------START--------------<")
 print(find_primes(14))
 # [2, 3, 5, 7, 11, 13]
 print("<-----------------END--------------<")
+
+#9/20/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given a non-negative integer n, convert
+# the integer to hexadecimal and return the
+# result as a string. Hexadecimal is a base
+# 16 representation of a number, where the
+# digits are 0123456789ABCDEF. Do not use any
+# builtin base conversion functions like hex.
+
+def to_hex(n):
+    # Fill this in.
+    print(n)
+
+print("Convert to Hexadecimal 9-20")
+print("<-----------------START--------------<")
+print(to_hex(123))
+# 7B
+print("<-----------------END--------------<")
