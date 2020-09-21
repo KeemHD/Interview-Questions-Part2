@@ -1042,6 +1042,17 @@ print("<-----------------END--------------<")
 def find_primes(n):
     # Fill this in.
     print(n)
+    prime_list = []
+    i = 2
+
+    while i <= n:
+        for x in range(2,i):
+            if (i % x) == 0:
+                break
+        else:
+            prime_list.append(i)
+        i+=1
+    return prime_list
 
 print("Primes 9-19")
 print("<-----------------START--------------<")
