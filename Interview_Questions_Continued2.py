@@ -1074,6 +1074,69 @@ print("<-----------------END--------------<")
 def to_hex(n):
     # Fill this in.
     print(n)
+    bit_stream = ""
+    hex = ""
+
+    while n != 0:
+        bit_stream += str(n%2)
+        n = int(n/2)
+
+    if len(bit_stream)%4 != 0:
+        pad = 4 - len(bit_stream)%4
+
+        i = 0
+        while i < pad:
+            bit_stream+="0"
+            i+=1
+
+    bit_stream = bit_stream[::-1]
+
+    if len(bit_stream) > 0:
+        start = 0
+        end = 4
+
+        while end <= len(bit_stream):
+            hex += get_hex(bit_stream[start:end])
+            start +=4
+            end +=4
+    else:
+        return "There was an Error!"
+
+    return hex
+
+def get_hex(s):
+    if s == "0000":
+        return "0"
+    elif s == "0001":
+        return "1"
+    elif s == "0010":
+        return "2"
+    elif s == "0011":
+        return "3"
+    elif s == "0100":
+        return "4"
+    elif s == "0101":
+        return "5"
+    elif s == "0110":
+        return "6"
+    elif s == "0111":
+        return "7"
+    elif s == "1000":
+        return "8"
+    elif s == "1001":
+        return "9"
+    elif s == "1010":
+        return "A"
+    elif s == "1011":
+        return "B"
+    elif s == "1100":
+        return "C"
+    elif s == "1101":
+        return "D"
+    elif s == "1110":
+        return "E"
+    elif s == "1111":
+        return "F"
 
 print("Convert to Hexadecimal 9-20")
 print("<-----------------START--------------<")
