@@ -1247,3 +1247,40 @@ print("<-----------------START--------------<")
 print(common_characters(['google' , 'facebook' , 'youtube']))
 # ['e', 'o']
 print("<-----------------END--------------<")
+
+#9/24/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Given a matrix, transpose it. Transposing a matrix
+# means the rows are now the colum and vice-versa.
+
+def transpose(mat):
+    # Fill this in.
+    tran_matrix = []
+    n=0
+
+    for x in mat:
+        print(x)
+
+    while n < len(mat[0]):
+        temp = []
+        for i in range(len(mat)):
+            temp.append(mat[i][n])
+        tran_matrix.append(temp)
+        n+=1
+
+    return tran_matrix
+
+mat = [
+    [1,2,3],
+    [4,5,6],
+]
+
+print("Transpose Matrix 9-24")
+print("<-----------------START--------------<")
+print(transpose(mat))
+# [[1,4],
+#  [2,5],
+#  [3,6]]
+print("<-----------------END--------------<")
