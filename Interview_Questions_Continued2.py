@@ -1302,3 +1302,23 @@ print(intersection([1, 2, 3, 4], [2, 4, 6, 8], [3, 4, 5]))
 # [4]
 print("<-----------------END--------------<")
 
+
+#9/26/20
+#Hi, here's your problem today.
+# This problem was recently asked by LinkedIn:
+
+#You are only allowed to perform 2 operations,
+# multiply a number by 2, or subtract a number by 1.
+# Given a number x and a number y, find the minimum number
+# of operations needed to go from x to y.
+
+def min_operations(x, y):
+    # Fill this in.
+    print()
+
+print("Minimum Number of Operations 9-25")
+print("<-----------------START--------------<")
+print(min_operations(6, 20))
+# (((6 - 1) * 2) * 2) = 20 : 3 operations needed only
+# print 3
+print("<-----------------END--------------<")
