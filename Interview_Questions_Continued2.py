@@ -1168,3 +1168,42 @@ print("<-----------------START--------------<")
 print(multiply("11", "13"))
 # 143
 print("<-----------------END--------------<")
+
+#9/22/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+#Given a string, we want to remove 2 adjacent
+# characters that are the same, and repete the
+# process with the new string until we coan no longer
+# perform the operation.
+
+def remove_adjacent_dup(s):
+    #Fill this in.
+    print(s)
+    prev_char = s[0]
+    temp = ""
+    i = 1
+    length = len(s)
+
+    while i < length:
+        if prev_char == s[i]:
+            temp = s[:i-1]
+            temp+= s[i+1:]
+            s = temp
+            length = len(s)
+            i = 0
+        else:
+            prev_char = s[i]
+        i+=1
+
+    return s
+
+print("Remove Adjacent Duplicate Characters 9-22")
+print("<-----------------START--------------<")
+print(remove_adjacent_dup('cabba'))
+# Start with cabba
+# After remove bb: caa
+# After remove aa: c
+# print c
+print("<-----------------END--------------<")
