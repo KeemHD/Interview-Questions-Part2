@@ -1207,3 +1207,43 @@ print(remove_adjacent_dup('cabba'))
 # After remove aa: c
 # print c
 print("<-----------------END--------------<")
+
+
+#9/23/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+# Given a list of strings, find the list of characters that
+# appear in all strings.
+
+def common_characters(strs):
+    # Fill this in
+    print(strs)
+    solution = []
+    character_dict = {}
+    total_letter_words = 0
+    words_of_str = ""
+
+    for words in strs:
+        words_of_str += words
+        for l in words:
+            if l not in character_dict:
+                character_dict[l] = words
+
+            elif l in character_dict and character_dict[l] != words_of_str:
+                character_dict[l] += words
+
+            total_letter_words += 1
+
+
+    for x in character_dict:
+        if len(character_dict[x]) == total_letter_words:
+            solution.append(x)
+
+    return solution
+
+print("Common Characters 9-23")
+print("<-----------------START--------------<")
+print(common_characters(['google' , 'facebook' , 'youtube']))
+# ['e', 'o']
+print("<-----------------END--------------<")
