@@ -1335,7 +1335,33 @@ print("<-----------------END--------------<")
 
 def shortest_dist(s, c):
     # Fill this in.
-    print()
+    print(s,c)
+    distance = []
+    count = 0
+    rev_count = 0
+
+    for i in range(len(s)):
+        for char in s[i:]:
+            if char == c:
+                break
+            else:
+                count+=1
+        x = i
+        while x > 0:
+            if s[x] == c:
+                break
+            else:
+                rev_count += 1
+            x-=1
+
+        if rev_count<count and rev_count != 0:
+            count = rev_count
+
+        distance.append(count)
+        rev_count = 0
+        count = 0
+
+    return distance
 
 print("Shortest Distance to Character 9-27")
 print("<-----------------START--------------<")
