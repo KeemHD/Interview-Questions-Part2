@@ -1486,3 +1486,23 @@ print(reshape_matrix([[1, 2], [3, 4]], 1, 4))
 print(reshape_matrix([[1, 2], [3, 4]], 2, 3))
 # None
 print("<-----------------END--------------<")
+
+#10/2/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given an integer, reverse the digits.
+# Do not convert the integer into a string and reverse it.
+
+def reverse_integer(num):
+    # Fill this in.
+    print(num)
+
+print("Reverse Integer 10-2")
+print("<-----------------START--------------<")
+print(reverse_integer(135))
+# 531
+
+print(reverse_integer(-321))
+# -123
+print("<-----------------END--------------<")
