@@ -1497,6 +1497,30 @@ print("<-----------------END--------------<")
 def reverse_integer(num):
     # Fill this in.
     print(num)
+    negative = False
+    rev_num = 0
+    place = 1
+
+    if num < 0:
+        num *= -1
+        negative = True
+
+    i = 1
+
+    while i < len(str(num)):
+        place *= 10
+        i += 1
+
+    while num>0:
+        temp = num%10
+        num = int(num/10)
+        rev_num += temp*place
+        place/=10
+
+    if negative:
+        rev_num *=-1
+
+    return int(rev_num)
 
 print("Reverse Integer 10-2")
 print("<-----------------START--------------<")
