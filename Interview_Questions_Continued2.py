@@ -1425,7 +1425,36 @@ print("<-----------------END--------------<")
 
 def sum_binary(bin1, bin2):
     # Fill this in.
-    print()
+    print(bin1+" + "+bin2)
+    total = 0
+    base = 0
+
+    if(len(bin1)> len(bin2)):
+        temp = bin1
+        bin1 = bin2
+        bin2 = temp
+
+    while len(bin1)> 0:
+        if bin1[-1] == "1":
+            total += (2**base)
+
+        if bin2[-1] == "1":
+            total+=(2**base)
+
+        base += 1
+        bin1 = bin1[:-1]
+        bin2 = bin2[:-1]
+
+    while len(bin2)> 0:
+        if bin2[-1] == "1":
+            total += (2 ** base)
+        base += 1
+        bin2 = bin2[:-1]
+
+    total = bin(total)
+    bin_str_solution = str(total)
+
+    return bin_str_solution[2:]
 
 print("Sum Binary Numbers 9-30")
 print("<-----------------START--------------<")
