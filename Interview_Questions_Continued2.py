@@ -1600,3 +1600,24 @@ print(integer_to_roman(48))
 print(integer_to_roman(444))
 # CDXLIV
 print("<-----------------END--------------<")
+
+
+#10/6/20
+#Hi, here's your problem today.
+# This problem was recently asked by Microsoft:
+
+#Given a list of strings, find the longest
+# common prefix between all strings.
+
+def longest_common_prefix(strs):
+  # Fill this in.
+  print(strs)
+
+print("Longest Common Prefix 10-4")
+print("<-----------------START--------------<")
+print(longest_common_prefix(['helloworld', 'hellokitty', 'hell']))
+# hell
+
+print(longest_common_prefix(['daily', 'interview', 'pro']))
+# ''
+print("<-----------------END--------------<")
