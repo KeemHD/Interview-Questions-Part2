@@ -1610,8 +1610,34 @@ print("<-----------------END--------------<")
 # common prefix between all strings.
 
 def longest_common_prefix(strs):
-  # Fill this in.
-  print(strs)
+    # Fill this in.
+    print(strs)
+    shortest = strs[0]
+    solution = ""
+    flag = True
+
+    for i in range(1,len(strs)):
+        if len(strs[i]) < len(shortest):
+            shortest = strs[i]
+            index = i
+
+    count = 0
+    while count < len(shortest):
+        for word in strs:
+            if word[count] != shortest[count]:
+                flag = False
+                break
+        if flag:
+            solution += shortest[count]
+        else:
+            break
+
+        count +=1
+
+    if len(solution) == 0:
+        solution = "No common prefix found in this list"
+
+    return solution
 
 print("Longest Common Prefix 10-4")
 print("<-----------------START--------------<")
