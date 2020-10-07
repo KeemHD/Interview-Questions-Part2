@@ -1674,3 +1674,23 @@ print(fourSum([3, 0, 1, -5, 4, 0, -1], 1))
 print(fourSum([0, 0, 0, 0, 0], 0))
 # print ([0, 0, 0, 0])
 print("<-----------------END--------------<")
+
+#10/6/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+#Given a number n, generate all possible
+# combinations of n well-formed brackets.
+
+def generate_brackets(n):
+    #Fill this in.
+    print(n)
+
+print("Generate Brackets 10-6")
+print("<-----------------START--------------<")
+print(generate_brackets(1))
+# ['()']
+
+print(generate_brackets(3))
+# ['((()))', '(()())', '()(())', '()()()', '(())()']
+print("<-----------------END--------------<")
