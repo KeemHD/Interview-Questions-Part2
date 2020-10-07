@@ -1712,6 +1712,24 @@ print("<-----------------END--------------<")
 def remove_dups(nums):
     # Fill this in.
     print()
+    if len(nums)>0:
+        prev = nums[0]
+        unique_count =1
+    else:
+        return "The list is empty"
+
+    i =1
+    while i < len(nums):
+        if nums[i] == prev:
+            nums.pop(i)
+            i-=1
+
+        else:
+            unique_count+=1
+            prev = nums[i]
+        i+=1
+
+    return unique_count
 
 print("Remove Duplicates From Sorted List 10-7")
 print("<-----------------START--------------<")
