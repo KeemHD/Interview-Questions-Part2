@@ -1790,3 +1790,35 @@ print(find_num([1, 1, 3, 5, 7], 1))
 print(find_num([1, 2, 3, 4], 5))
 # (-1, -1)
 print("<-----------------END--------------<")
+
+#10/10/20
+#Hi, here's your problem today.
+# This problem was recently asked by LinkedIn:
+
+#Given a binary tree, find the minimum depth of the binary tree.
+# The minimum depth is the shortest distance from the root to a leaf.
+
+class Node:
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+
+def min_depth_bst(root):
+    # Fill this in.
+    print()
+
+n3 = Node(3, None, Node(4))
+n2 = Node(2, Node(3))
+n1 = Node(1, n2, n3)
+
+#     1
+#    / \
+#   2   3
+#        \
+#         4
+print("Minimum Depth of Binary Tree 10-10")
+print("<-----------------START--------------<")
+print(min_depth_bst(n1))
+# 2
+print("<-----------------END--------------<")
