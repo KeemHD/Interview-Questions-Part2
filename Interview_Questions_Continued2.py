@@ -1885,7 +1885,15 @@ print("<-----------------END--------------<")
 
 def one_bits(num):
     # Fill this in.
-    print()
+    print(num)
+    count = 0
+    bit_stream = bin(num)
+
+    for c in bit_stream:
+        if c == '1':
+            count +=1
+
+    return count
 
 print("Number of 1 bits 10-13")
 print("<-----------------START--------------<")
