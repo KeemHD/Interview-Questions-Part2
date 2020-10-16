@@ -1767,3 +1767,26 @@ print("<-----------------START--------------<")
 print(sum_combinations([10, 1, 2, 7, 6, 1, 5], 8))
 # [(2, 6), (1, 1, 6), (1, 2, 5), (1, 7)]
 print("<-----------------END--------------<")
+
+
+
+#10/9/20
+#Given a sorted list with duplicates,
+# and a target number n,
+# find the range in which the number exists
+# (represented as a tuple (low, high),
+# both inclusive. If the number does not
+# exist in the list, return (-1, -1)).
+
+def find_num(nums, target):
+    # Fill this in.
+    print()
+
+print("Range Searching in a Sorted List 10-9")
+print("<-----------------START--------------<")
+print(find_num([1, 1, 3, 5, 7], 1))
+# (0, 1)
+
+print(find_num([1, 2, 3, 4], 5))
+# (-1, -1)
+print("<-----------------END--------------<")
