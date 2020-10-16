@@ -1939,7 +1939,32 @@ print("<-----------------END--------------<")
 
 def searchMatrix(mat, value):
     # Fill this in.
-    print()
+    print(value)
+
+    for r in mat:
+        print(r)
+
+    status = False
+
+
+    for i in range(len(mat)):
+        if mat[i][0] == value:
+            status = True
+            break
+
+        if mat[i][0] > value:
+            if i > 0:
+                for n in mat[i-1]:
+                    if n ==  value:
+                        status = True
+                        break
+            else:
+                break
+
+    return status
+
+
+
 
 mat = [
     [1, 3, 5, 8],
