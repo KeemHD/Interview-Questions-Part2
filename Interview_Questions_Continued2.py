@@ -1858,3 +1858,21 @@ print(target_sum_bst(n1, 9))
 # True
 # Path from 1 -> 2 -> 6
 print("<-----------------END--------------<")
+
+#10/12/20
+#Hi, here's your problem today.
+# This problem was recently asked by AirBNB:
+
+#A majority element is an element that appears
+# more than half the time. Given a list
+# with a majority element, find the majority element.
+
+def majority_element(nums):
+    # Fill this in.
+    print()
+
+print("Majority Element 10-12")
+print("<-----------------START--------------<")
+print(majority_element([3, 5, 3, 3, 2, 4, 3]))
+# 3
+print("<-----------------END--------------<")
