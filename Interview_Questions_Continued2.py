@@ -1876,3 +1876,20 @@ print("<-----------------START--------------<")
 print(majority_element([3, 5, 3, 3, 2, 4, 3]))
 # 3
 print("<-----------------END--------------<")
+
+#10/13/20
+#Hi, here's your problem today.
+# This problem was recently asked by Google:
+
+#Given an integer, find the number of 1 bits it has.
+
+def one_bits(num):
+    # Fill this in.
+    print()
+
+print("Number of 1 bits 10-13")
+print("<-----------------START--------------<")
+print(one_bits(23))
+# 4
+# 23 = 0b10111
+print("<-----------------END--------------<")
