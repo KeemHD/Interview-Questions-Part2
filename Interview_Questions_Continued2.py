@@ -1948,6 +1948,7 @@ def searchMatrix(mat, value):
 
 
     for i in range(len(mat)):
+        print(i+1)
         if mat[i][0] == value:
             status = True
             break
@@ -1955,7 +1956,7 @@ def searchMatrix(mat, value):
         if mat[i][0] > value:
             if i > 0:
                 for n in mat[i-1]:
-                    if n ==  value:
+                    if n == value:
                         status = True
                         break
             else:
@@ -1980,4 +1981,22 @@ print(searchMatrix(mat, 4))
 
 print(searchMatrix(mat, 10))
 # True
+print("<-----------------END--------------<")
+
+#10/16/20
+#Hi, here's your problem today.
+# This problem was recently asked by Facebook:
+
+#Given a list of unique numbers,
+# generate all possible subsets without duplicates.
+# This includes the empty set as well.
+
+def generateAllSubsets(nums):
+    # Fill this in.
+    print(nums)
+
+print("Generate all Subsets 10-16")
+print("<-----------------START--------------<")
+print(generateAllSubsets([1, 2, 3]))
+# [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
 print("<-----------------END--------------<")
