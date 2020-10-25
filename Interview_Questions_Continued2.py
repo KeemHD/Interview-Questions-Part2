@@ -2233,3 +2233,21 @@ print("<-----------------END--------------<")
 
 #Note: This question is classified as "hard."
 #HINT: Start with a brute-force solution.
+
+
+#10/22/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Find the k-th largest number in a sequence of unsorted numbers.
+#Can you do this in linear time?
+
+def findKthLargest(arr, k):
+    # Fill this in.
+    print(arr,k)
+
+print("Find the K-th Largest Number 10-22")
+print("<-----------------START--------------<")
+print(findKthLargest([8, 7, 2, 3, 4, 1, 5, 6, 9, 0], 3))
+# 7
+print("<-----------------END--------------<")
