@@ -2260,3 +2260,24 @@ print("<-----------------START--------------<")
 print(findKthLargest([8, 7, 2, 3, 4, 1, 5, 6, 9, 0], 3))
 # 7
 print("<-----------------END--------------<")
+
+
+#10/23/20
+#Hi, here's your problem today.
+# This problem was recently asked by LinkedIn:
+
+#Given a set of words,
+# find all words that are concatenations
+# of other words in the set.
+
+class Solution(object):
+    def findAllConcatenatedWords(self, words):
+        # Fill this in.
+        print(words)
+
+input = ['rat', 'cat', 'cats', 'dog', 'catsdog', 'dogcat', 'dogcatrat']
+print("Word Concatenation 10-23")
+print("<-----------------START--------------<")
+print(Solution().findAllConcatenatedWords(input))
+# ['catsdog', 'dogcat', 'dogcatrat']
+print("<-----------------END--------------<")
