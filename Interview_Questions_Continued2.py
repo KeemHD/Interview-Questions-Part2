@@ -2205,3 +2205,31 @@ print(cache.get(4))
 print(cache.get(3))
 # 3
 print("<-----------------END--------------<")
+
+
+#10/21/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Find all words that are concatenations of a list.
+
+#Input:
+#["tech", "lead", "techlead", "cat", "cats", "dog", "catsdog"]
+
+#Output:
+#['techlead', 'catsdog']
+
+class Solution(object):
+    def findAllConcatenatedWordsInADict(self, words):
+        # Fill this in.
+        print()
+
+input = ["tech", "lead", "techlead", "cat", "cats", "dog", "catsdog"]
+
+print("Concatenated Words 10-21")
+print("<-----------------START--------------<")
+print(Solution().findAllConcatenatedWordsInADict(input))
+print("<-----------------END--------------<")
+
+#Note: This question is classified as "hard."
+#HINT: Start with a brute-force solution.
