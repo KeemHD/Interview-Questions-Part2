@@ -2281,3 +2281,28 @@ print("<-----------------START--------------<")
 print(Solution().findAllConcatenatedWords(input))
 # ['catsdog', 'dogcat', 'dogcatrat']
 print("<-----------------END--------------<")
+
+#10/24/20
+#Hi, here's your problem today.
+# This problem was recently asked by Uber:
+
+#Find the maximum number of connected colors in a grid.
+# Can you solve this both recursively and iteratively?
+
+class Grid:
+    def __init__(self, grid):
+        self.grid = grid
+
+    def max_connected_colors(self):
+        # Fill this in.
+        print()
+
+grid = [[1, 0, 0, 1],
+        [1, 1, 1, 1],
+        [0, 1, 0, 0]]
+
+print("Connected Colors in a Grid 10-24")
+print("<-----------------START--------------<")
+print(Grid(grid).max_connected_colors())
+# 7
+print("<-----------------END--------------<")
