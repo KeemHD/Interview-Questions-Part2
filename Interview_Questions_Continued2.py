@@ -2245,6 +2245,15 @@ print("<-----------------END--------------<")
 def findKthLargest(arr, k):
     # Fill this in.
     print(arr,k)
+    largest = arr[0]
+    i = 1
+
+    while i < k:
+        if arr[i]> largest:
+            largest = arr[i]
+        i+=1
+
+    return largest
 
 print("Find the K-th Largest Number 10-22")
 print("<-----------------START--------------<")
