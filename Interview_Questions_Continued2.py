@@ -2306,3 +2306,35 @@ print("<-----------------START--------------<")
 print(Grid(grid).max_connected_colors())
 # 7
 print("<-----------------END--------------<")
+
+
+#10/25/20
+#Hi, here's your problem today.
+# This problem was recently asked by AirBNB:
+
+#Implement auto-completion.
+# Given a large set of words (for instance 1,000,000 words)
+# and then a single word prefix, find all words that it can complete to.
+#Can you solve this optimally
+# (in linear time with regards to the result set)?
+
+class Solution:
+    def build(self,word_list):
+        # Fill this in.
+        self.word_list = word_list
+
+
+    def autocomplete(self, word):
+        # Fill this in.
+        word_list = self.word_list
+        print(word_list)
+        print(word)
+
+s = Solution()
+s.build(['dog', 'dark', 'cat', 'door', 'dodge'])
+
+print("Autocompletion 10-25")
+print("<-----------------START--------------<")
+print(s.autocomplete('do'))
+# ['dog', 'door', 'dodge']
+print("<-----------------END--------------<")
