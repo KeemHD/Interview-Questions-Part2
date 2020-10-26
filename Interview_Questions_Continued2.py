@@ -2329,7 +2329,21 @@ class Solution:
         word_list = self.word_list
         print(word_list)
         print(word)
+        flag = False
+        result = []
 
+
+        for w in word_list:
+            for i in range(len(word)):
+                if word[i] != w[i]:
+                    flag = True
+                    break
+            if not flag:
+                result.append(w)
+            else:
+                flag = False
+
+        return result
 s = Solution()
 s.build(['dog', 'dark', 'cat', 'door', 'dodge'])
 
