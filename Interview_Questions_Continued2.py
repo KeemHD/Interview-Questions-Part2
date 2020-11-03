@@ -2369,8 +2369,18 @@ class Solution(object):
     def canSpell(self, magazine, note):
         # Fill this in.
         print(magazine,note)
+        status = True
+        my_dict = {}
 
+        for letter in magazine:
+            my_dict[letter] = 1
 
+        for l in note:
+            if l not in my_dict:
+                status = False
+                break
+
+        return status
 
 print("Ransom Note 10-26")
 print("<-----------------START--------------<")
