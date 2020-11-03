@@ -2503,6 +2503,21 @@ class Solution(object):
     def checkPerfectNumber(self, num):
         # Fill this in.
         print(num)
+        div_list = []
+        div_list.append(1)
+
+        i = 2
+        while i<num:
+            if num % i == 0:
+                div_list.append(i)
+
+            i+=1
+
+        total = 0
+        for n in div_list:
+            total += n
+
+        return(total == num)
 
 print("Perfect Number 10-29")
 print("<-----------------START--------------<")
