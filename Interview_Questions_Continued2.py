@@ -2593,3 +2593,31 @@ print("<-----------------START--------------<")
 print(Solution().findDuplicates([4,3,2,7,8,2,3,1]))
 # [2, 3]
 print("<-----------------END--------------<")
+
+#11/1/20
+#Hi, here's your problem today.
+# This problem was recently asked by Microsoft:
+
+#Given an array of heights, determine whether the
+# array forms a "mountain" pattern.
+# A mountain pattern goes up and then down.
+
+#Like
+#  /\
+# /  \
+#/    \
+class Solution(object):
+    def validMountainArray(self, arr):
+        # Fill this in.
+        print(arr)
+
+
+
+print("Valid Mountain Array 11-1")
+print("<-----------------START--------------<")
+print(Solution().validMountainArray([1, 2, 3, 2, 1]))
+# True
+
+print(Solution().validMountainArray([1, 2, 3]))
+# False
+print("<-----------------END--------------<")
