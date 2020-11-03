@@ -2544,6 +2544,14 @@ class Solution(object):
     def addDigits(self,num):
         print(num)
 
+        while num > 10:
+            temp = 0
+            for c in str(num):
+                temp += int(c)
+            num = temp
+
+        return num
+
 print("Add Digits 10-30")
 print("<-----------------START--------------<")
 print(Solution().addDigits(159))
