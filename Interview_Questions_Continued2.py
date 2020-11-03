@@ -2390,3 +2390,21 @@ print(Solution().canSpell(['a', 'b', 'c', 'd', 'e', 'f'], 'bed'))
 print(Solution().canSpell(['a', 'b', 'c', 'd', 'e', 'f'], 'cat'))
 # False
 print("<-----------------END--------------<")
+
+
+#10/27/20
+#Hi, here's your problem today.
+# This problem was recently asked by Google:
+
+#Given a list of points and a number k,
+# find the k closest points to the origin.
+
+def findClosestPointsOrigin(points, k):
+    # Fill this in.
+    print(points,k)
+
+print("Closest Points to Orgin 10-27")
+print("<-----------------START--------------<")
+print (findClosestPointsOrigin([[1, 1], [3, 3], [2, 2], [4, 4], [-1, -1]], 3))
+# [[-1, -1], [1, 1], [2, 2]]
+print("<-----------------END--------------<")
