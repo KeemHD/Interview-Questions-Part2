@@ -2610,7 +2610,14 @@ class Solution(object):
     def validMountainArray(self, arr):
         # Fill this in.
         print(arr)
+        status = True
 
+        for i in range(int(len(arr)/2)):
+            if arr[i] != arr[len(arr)-1-i]:
+                status = False
+                break
+
+        return status
 
 
 print("Valid Mountain Array 11-1")
