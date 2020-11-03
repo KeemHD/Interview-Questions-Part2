@@ -2572,6 +2572,21 @@ class Solution(object):
     def findDuplicates(self, nums):
         # Fill this in.
         print(nums)
+        solution = []
+        my_dic = {}
+
+        for n in nums:
+            if n not in my_dic:
+                my_dic[n] = 1
+            else:
+                my_dic[n] += 1
+
+
+        for x,y in my_dic.items():
+            if y>1:
+                solution.append(x)
+
+        return solution
 
 print("Find Duplicates 10-31")
 print("<-----------------START--------------<")
