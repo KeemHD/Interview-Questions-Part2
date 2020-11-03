@@ -2594,37 +2594,69 @@ print(Solution().findDuplicates([4,3,2,7,8,2,3,1]))
 # [2, 3]
 print("<-----------------END--------------<")
 
+
+
 #11/1/20
 #Hi, here's your problem today.
 # This problem was recently asked by Microsoft:
 
-#Given an array of heights, determine whether the
-# array forms a "mountain" pattern.
-# A mountain pattern goes up and then down.
+#Given a tree, the leaves form a certain order from left to right.
+# Two trees are considered "leaf-similar" if their
+# leaf orderings are the same.
 
-#Like
-#  /\
-# /  \
-#/    \
+#For instance, the following two trees are considered
+# leaf-similar because their leaves are [2, 1]:
+#    3
+#   / \
+#  5   1
+#   \
+#    2
+#    7
+#   / \
+#  2   1
+#   \
+#    2
+#Our job is to determine, given two trees, whether they are "leaf similar."
+
+class Node(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 class Solution(object):
-    def validMountainArray(self, arr):
+    def leafSimilar(self, root1, root2):
         # Fill this in.
-        print(arr)
-        status = True
+        print()
 
-        for i in range(int(len(arr)/2)):
-            if arr[i] != arr[len(arr)-1-i]:
-                status = False
-                break
+#    3
+#   / \
+#  5   1
+#   \
+#    2
 
-        return status
+t1 = Node(3)
+t1.left = Node(5)
+t1.right = Node(1)
+t1.left.left = Node(6)
+t1.left.right = Node(2)
 
+#    7
+#   / \
+#  2   1
+#   \
+#    2
+t2 = Node(7)
+t2.left = Node(2)
+t2.right = Node(1)
+t2.left.left = Node(6)
+t2.left.right = Node(2)
 
-print("Valid Mountain Array 11-1")
+print("Leaf-Similar Trees 11-1")
 print("<-----------------START--------------<")
-print(Solution().validMountainArray([1, 2, 3, 2, 1]))
+print(Solution().leafSimilar(t1, t2))
 # True
-
-print(Solution().validMountainArray([1, 2, 3]))
-# False
 print("<-----------------END--------------<")
+
+
+
