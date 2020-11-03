@@ -2660,3 +2660,68 @@ print("<-----------------END--------------<")
 
 
 
+#11/2/20
+#Hi, here's your problem today.
+# This problem was recently asked by Microsoft:
+
+#Given an array of heights, determine whether the
+# array forms a "mountain" pattern.
+# A mountain pattern goes up and then down.
+
+#Like
+#  /\
+# /  \
+#/    \
+class Solution(object):
+    def validMountainArray(self, arr):
+        # Fill this in.
+        print(arr)
+        status = True
+
+        for i in range(int(len(arr)/2)):
+            if arr[i] != arr[len(arr)-1-i]:
+                status = False
+                break
+
+        return status
+
+
+print("Valid Mountain Array 11-2")
+print("<-----------------START--------------<")
+print(Solution().validMountainArray([1, 2, 3, 2, 1]))
+# True
+
+print(Solution().validMountainArray([1, 2, 3]))
+# False
+print("<-----------------END--------------<")
+
+
+#11/3/20
+#Hi, here's your problem today.
+# This problem was recently asked by Apple:
+
+#Given a sorted array, convert it into a binary search tree.
+
+#Can you do this both recursively and iteratively?
+
+class Node(object):
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+    def __str__(self):
+      return f"{self.val}, ({self.left}, {self.right})"
+
+class Solution(object):
+    def sortedArrayToBST(self, nums):
+        # Fill this in.
+        print(nums)
+
+n = Solution().sortedArrayToBST([-10, -3, 0, 5, 9])
+print("Array to Binary Search Tree 11-3")
+print("<-----------------START--------------<")
+print(n)
+# 0, (-3, (-10, (None, None), None), 9, (5, (None, None), None))
+print("<-----------------END--------------<")
+
+
