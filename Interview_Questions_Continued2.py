@@ -2402,6 +2402,35 @@ print("<-----------------END--------------<")
 def findClosestPointsOrigin(points, k):
     # Fill this in.
     print(points,k)
+    origin_point = []
+    solution =[]
+    og_point = points[0]
+
+    for i in range(len(points)):
+        temp = (int((og_point[0]+og_point[1])/2) -
+                int((points[i][0] + points[i][1])/2))
+        origin_point.append(abs(temp))
+
+
+    largest = origin_point[0]
+    i = 0
+    while i < k:
+        closest = origin_point[0]
+        index = 0
+
+        for x in range(1,len(origin_point)):
+
+            if origin_point[x] <= closest:
+                closest = origin_point[x]
+                index = x
+            if largest < origin_point[x]:
+                largest = origin_point[x]
+
+        origin_point[index] = largest
+        solution.append(points[index])
+        i+=1
+
+    return solution
 
 print("Closest Points to Orgin 10-27")
 print("<-----------------START--------------<")
