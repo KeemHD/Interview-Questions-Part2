@@ -2510,7 +2510,6 @@ class Solution(object):
         while i<num:
             if num % i == 0:
                 div_list.append(i)
-
             i+=1
 
         total = 0
@@ -2524,4 +2523,31 @@ print("<-----------------START--------------<")
 print(Solution().checkPerfectNumber(28))
 # True
 # 28 = 1 + 2 + 4 + 7 + 14
+print("<-----------------END--------------<")
+
+
+
+#10/30/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given a number like 159,
+# add the digits repeatedly until you get a single number.
+
+#For instance, 1 + 5 + 9 = 15.
+#1 + 5 = 6.
+
+#So the answer is 6.
+
+class Solution(object):
+    # Fill this in.
+    def addDigits(self,num):
+        print(num)
+
+print("Add Digits 10-30")
+print("<-----------------START--------------<")
+print(Solution().addDigits(159))
+# 1 + 5 + 9 = 15
+# 1 + 5 = 6
+# 6
 print("<-----------------END--------------<")
