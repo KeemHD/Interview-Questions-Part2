@@ -2559,3 +2559,22 @@ print(Solution().addDigits(159))
 # 1 + 5 = 6
 # 6
 print("<-----------------END--------------<")
+
+#10/31/20
+#Hi, here's your problem today.
+# This problem was recently asked by Amazon:
+
+#Given an array of size n,
+# and all values in the array are in the range 1 to n,
+# find all the duplicates.
+
+class Solution(object):
+    def findDuplicates(self, nums):
+        # Fill this in.
+        print(nums)
+
+print("Find Duplicates 10-31")
+print("<-----------------START--------------<")
+print(Solution().findDuplicates([4,3,2,7,8,2,3,1]))
+# [2, 3]
+print("<-----------------END--------------<")
