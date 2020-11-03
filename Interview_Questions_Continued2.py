@@ -2352,3 +2352,31 @@ print("<-----------------START--------------<")
 print(s.autocomplete('do'))
 # ['dog', 'door', 'dodge']
 print("<-----------------END--------------<")
+
+#10/26/20
+#Hi, here's your problem today.
+# This problem was recently asked by Google:
+
+#A criminal is constructing a ransom note.
+# In order to disguise his handwriting,
+# he is cutting out letters from a magazine.
+
+#Given a magazine of letters and the note he wants to write,
+# determine whether he can construct the word.
+# Can you do this in linear time?
+
+class Solution(object):
+    def canSpell(self, magazine, note):
+        # Fill this in.
+        print(magazine,note)
+
+
+
+print("Ransom Note 10-26")
+print("<-----------------START--------------<")
+print(Solution().canSpell(['a', 'b', 'c', 'd', 'e', 'f'], 'bed'))
+# True
+
+print(Solution().canSpell(['a', 'b', 'c', 'd', 'e', 'f'], 'cat'))
+# False
+print("<-----------------END--------------<")
