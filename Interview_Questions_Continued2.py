@@ -2771,7 +2771,15 @@ class Node(object):
 class Solution(object):
     def deleteDuplicates(self, node):
         # Fill this in.
-        print()
+        prev = node
+        curr = node.next
+        while curr:
+            if prev.val == curr.val:
+                prev.next = curr.next
+            else:
+                prev = curr
+
+            curr = curr.next
 
 n = Node(1, Node(2, Node(3, Node(3, Node(4)))))
 print("Remove duplicates from Linked List 11-5")
