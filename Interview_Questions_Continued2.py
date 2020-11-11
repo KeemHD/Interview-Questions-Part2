@@ -2891,3 +2891,25 @@ print(maxNonAdjacentSum([2, 1, 2, 7, 3]))
 # 9
 # max sum is 2 (index 0) + 7 (index 3)
 print("<-----------------END--------------<")
+
+#11/9/20
+#Hi, here's your problem today.
+# This problem was recently asked by Facebook:
+
+#Given a list of numbers, where every number shows up
+# twice except for one number, find that one number.
+
+#Example:
+#Input: [4, 3, 2, 4, 1, 3, 2]
+#Output: 1
+#Challenge: Find a way to do this using O(1) memory.
+
+def singleNumber(nums):
+    # Fill this in.
+    print(nums)
+
+print("Find the non-duplicate number 11-9")
+print("<-----------------START--------------<")
+print(singleNumber([4, 3, 2, 4, 1, 3, 2]))
+# 1
+print("<-----------------END--------------<")
