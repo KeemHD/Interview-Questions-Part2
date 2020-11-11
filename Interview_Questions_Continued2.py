@@ -2828,3 +2828,41 @@ print(Solution().canPick2([2, 4, 5, 3, 3, 9, 2, 2, 2]))
 print(Solution().canPick2([1, 2, 3, 4, 5]))
 # False
 print("<-----------------END--------------<")
+
+#11/7/20
+#Hi, here's your problem today.
+# This problem was recently asked by LinkedIn:
+
+#Given a binary tree, perform an in-order traversal both
+# recursively and iteratively.
+
+class Node:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def inorder(node):
+    # Fill this in.
+    print()
+
+def inorder_iterative(node):
+    # Fill this in.
+    print()
+
+#     12
+#    /  \
+#   6    4
+#  / \   / \
+# 2   3 7   8
+n = Node(12, Node(6, Node(2), Node(3)), Node(4, Node(7), Node(8)))
+
+print("Iterative In-Order Tree 11-7")
+print("<-----------------START--------------<")
+inorder(n)
+# 2 6 3 12 7 4 8
+
+inorder_iterative(n)
+# 2 6 3 12 7 4 8
+print("<-----------------END--------------<")
