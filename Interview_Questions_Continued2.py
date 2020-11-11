@@ -2772,14 +2772,14 @@ class Solution(object):
     def deleteDuplicates(self, node):
         # Fill this in.
         prev = node
-        curr = node.next
-        while curr:
-            if prev.val == curr.val:
-                prev.next = curr.next
+        node = node.next
+        while node:
+            if prev.val == node.val:
+                prev.next = node.next
             else:
-                prev = curr
+                prev = node
 
-            curr = curr.next
+            node = node.next
 
 n = Node(1, Node(2, Node(3, Node(3, Node(4)))))
 print("Remove duplicates from Linked List 11-5")
@@ -2789,4 +2789,42 @@ print(n)
 Solution().deleteDuplicates(n)
 print(n)
 # 1 2 4
+print("<-----------------END--------------<")
+
+
+#11/6/20
+#Hi, here's your problem today.
+# This problem was recently asked by Twitter:
+
+#Given an array containing only positive integers,
+# return if you can pick two integers from the array
+# which cuts the array into three pieces such that
+# the sum of elements in all pieces is equal.
+
+#Example 1:
+#Input: array = [2, 4, 5, 3, 3, 9, 2, 2, 2]
+
+#Output: true
+#Explanation: choosing
+# the number 5 and 9 results in three
+# pieces [2, 4], [3, 3] and [2, 2, 2]. Sum = 6.
+
+#Example 2:
+#Input: array =[1, 1, 1, 1],
+
+#Output: false
+
+class Solution(object):
+    def canPick2(self, arr):
+        # Fill this in.
+        print(arr)
+
+
+print("Array of Equal Parts 11-6")
+print("<-----------------START--------------<")
+print(Solution().canPick2([2, 4, 5, 3, 3, 9, 2, 2, 2]))
+# True
+
+print(Solution().canPick2([1, 2, 3, 4, 5]))
+# False
 print("<-----------------END--------------<")
