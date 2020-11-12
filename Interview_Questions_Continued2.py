@@ -2845,7 +2845,10 @@ class Node:
 
 def inorder(node):
     # Fill this in.
-    print()
+    if node:
+        inorder(node.left)
+        print(node.val)
+        inorder(node.right)
 
 def inorder_iterative(node):
     # Fill this in.
